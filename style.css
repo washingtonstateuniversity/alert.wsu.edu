@@ -223,6 +223,32 @@ ul.notifications li:before {
 .examples p {
   padding-bottom:1em;
 }
+/****************************
+  Blog, Archive, and Search
+*****************************/
+.blog main section,
+.archive main section,
+.search main section {
+  margin-top:0;
+}
+
+.blog article,
+.archive article,
+.search article {
+  padding-bottom:1.4em;
+}
+.blog h2.article-title,
+.archive h2.article-title,
+.search h2.article-title {
+  padding-bottom:0;
+}
+.article-header hgroup.source,
+.article-header .hgroup.source {
+  padding-bottom:1.8em;
+}
+.article-author {
+  display:none;
+}
 /*******************
   Media Query
 *******************/
