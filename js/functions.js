@@ -31,12 +31,12 @@ jQuery(document).ready(function($) {
             img: 'https://stage.alert.wsu.edu/wp-content/uploads/sites/1444/2016/08/report.png',
             w: 500,
             h: 500
-        }
+        },
         L4: {
-            img: 'https://stage.alert.wsu.edu/wp-content/uploads/sites/1444/2016/08/studentemergencynotification.png',
+            img:'https://stage.alert.wsu.edu/wp-content/uploads/sites/1444/2016/08/studentemergencynotification.png',
             w: 500,
             h: 500
-        }
+        },
         L5: {
             img: 'https://stage.alert.wsu.edu/wp-content/uploads/sites/1444/2016/08/thankyou.png',
             w: 500,
