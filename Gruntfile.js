@@ -7,6 +7,9 @@ module.exports = function(grunt) {
 		},
 
 		concat: {
+			options: {
+				sourceMap: true
+			},
 			dist: {
 				src: "css/*.css",
 				dest: "tmp-style.css"
