@@ -143,7 +143,6 @@ main ul li {
 
 	/* Gradient via http://colorzilla.com/gradient-editor/#aca301+0,9b8d1f+100 */
 	background: rgb(172, 163, 1); /* Old browsers */ /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: -webkit-linear-gradient(315deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%);
 	background: linear-gradient(135deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aca301", endColorstr="#9b8d1f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
@@ -154,7 +153,6 @@ main ul li {
 
 	/* Gradient via http://colorzilla.com/gradient-editor/#ffb81c+0,be860e+100 */
 	background: rgb(255, 184, 28); /* Old browsers */ /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: -webkit-linear-gradient(315deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%);
 	background: linear-gradient(135deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb81c", endColorstr="#be860e", GradientType=1); /* IE6-9 fallback on horizontal gradient */
@@ -165,7 +163,6 @@ main ul li {
 
 	/* Gradient via http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
 	background: rgb(246, 134, 31); /* Old browsers */ /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: -webkit-linear-gradient(315deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%);
 	background: linear-gradient(135deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6861f", endColorstr="#f6861f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
