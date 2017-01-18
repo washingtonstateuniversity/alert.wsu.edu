@@ -147,7 +147,7 @@ main ul li {
 
 }
 
-.notifications-wrap .system-announcement.alert {
+.notifications-wrap .system-announcement.emergency {
 
 	/* Gradient via http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
 	background: rgb(246, 134, 31); /* Old browsers */ /* FF3.6-15 */
