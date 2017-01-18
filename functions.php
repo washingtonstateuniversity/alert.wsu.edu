@@ -155,3 +155,18 @@ function wsu_alert_unregister_taxonomies() {
 	unregister_taxonomy_for_object_type( 'wsuwp_university_location', 'post' );
 	unregister_taxonomy_for_object_type( 'wsuwp_university_org', 'post' );
 }
+
+add_action( 'after_setup_theme', 'wsu_alert_setup_image_sizes', 9 );
+/**
+ * Removes support for featured images and other post thumbnails on alerts.
+ *
+ * This helps to keep the new alert screen free of clutter. If background
+ * images are needed for other pages on the site, we'll need to selectively
+ * re-enable them.
+ *
+ * @since 0.1.0
+ */
+function wsu_alert_setup_image_sizes() {
+	remove_theme_support( 'post-thumbnails' );
+	remove_action( 'after_setup_theme', 'Spine_Theme_Images' );
+}
