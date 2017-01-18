@@ -171,29 +171,29 @@ main ul li {
 /*******************
   Content Syndicate
 *******************/
-.wsuwp-content-syndicate-wrapper {
+.announcements-container {
 	counter-reset: section;
 }
 
-.wsuwp-content-syndicate-wrapper ul {
+.announcements-container ul {
 	padding-left: 45px;
 }
 
-.wsuwp-content-syndicate-wrapper ul li {
+.announcements-container ul li {
 	list-style: none;
 	border-bottom: 1px solid #d9d9d9;
 	padding: 2em 0;
 }
 
-.wsuwp-content-syndicate-wrapper ul li:first-child {
+.announcements-container ul li:first-child {
 	padding-top: 0;
 }
 
-.wsuwp-content-syndicate-wrapper ul li:last-child {
+.announcements-container ul li:last-child {
 	border-bottom: 0;
 }
 
-.wsuwp-content-syndicate-wrapper ul li:before {
+.announcements-container ul li:before {
 	position: absolute;
 	left: 68px;
 	width: 20px;
@@ -206,17 +206,17 @@ main ul li {
 	border-radius: 50%;
 }
 
-.content-item-byline-author {
+.announcement-item-byline-author {
 	display: none;
 }
 
-.content-item-title,
-.content-item-byline {
+.announcement-item-title,
+.announcement-item-byline {
 	font-weight: 600;
 	margin-bottom: .7em;
 }
 
-.content-item-excerpt {
+.announcement-item-excerpt {
 	margin-top: .8em;
 	display: block;
 }
@@ -274,6 +274,11 @@ ul.notifications li:before {
 /*******************
   Dial 911
 *******************/
+.dial-911 > p:first-child {
+	padding-top: 1.6em;
+	text-transform: uppercase;
+}
+
 .dial-911 .dial {
 	display: -webkit-box;
 	display: -ms-flexbox;
