@@ -1,3 +1,13 @@
+/*
+ Theme Name:     WSU Alert
+ Theme URI:      https://web.wsu.edu/
+ Description:    A child theme for Washington State University's Spine framework
+ Author:         WSU University Communications
+ Author URI:     https://ucomm.wsu.edu/
+ Template:       spine
+ Version:        0.0.7
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -409,4 +419,5 @@ ul.notifications li:before {
 		left: 25px;
 	}
 }
+
 /*# sourceMappingURL=style.css.map */
