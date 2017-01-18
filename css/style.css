@@ -268,8 +268,6 @@ ul.notifications li:before {
   Dial 911
 *******************/
 .dial-911 .dial {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	height: 60px;
@@ -278,8 +276,6 @@ ul.notifications li:before {
 
 .dial-911 .dial img,
 .dial-911 .dial h2 {
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 }
 
