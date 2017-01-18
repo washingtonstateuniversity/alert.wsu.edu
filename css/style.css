@@ -1,306 +1,304 @@
-/*
- Theme Name:     WSU Alert
- Theme URI:      https://web.wsu.edu/
- Description:    A child theme for Washington State University's Spine framework
- Author:         WSU University Communications
- Author URI:     https://ucomm.wsu.edu/
- Template:       spine
- Version:        0.0.7
-*/
-
 * {
-  margin:0;
-  padding:0;
-  font-size:100%;
-  box-sizing: border-box;
-  word-wrap: break-word;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	box-sizing: border-box;
+	word-wrap: break-word;
 }
 body,
 body:not(.has-background-image) {
-  background-image:none;
-  background-color:#d7dadb;
-  color:#23282b;
+	background-image:none;
+	background-color:#d7dadb;
+	color:#23282b;
 }
 main section {
-  background-color:#fff;
-  margin-top:30px;
+	background-color:#fff;
+	margin-top:30px;
 }
 main section:first-child {
-  margin-top:0;
+	margin-top:0;
 }
 .main-header {
-  background-color:#fff;
+	background-color:#fff;
 }
 .main-header sub,
 .main-header sup,
 .main-header sup a {
-  color:#23282b;
-  font-size:32px;
-  font-weight:300;
+	color:#23282b;
+	font-size:32px;
+	font-weight:300;
 }
 .main-header sup a:hover {
-  color:#981e32;
+	color:#981e32;
 }
 .main-header sub *,
 .main-header sub a {
-  display:none;
+	display:none;
 }
 main section.no-margin,
 header.main-header + section {
-  margin-top:0;
+	margin-top:0;
 }
 hr {
 	background-color: rgba(0,0,0,.1);
-  margin-top:2em;
-  margin-bottom:2em;
+	margin-top:2em;
+	margin-bottom:2em;
 }
 /*******************
   Typography
 *******************/
 h2 {
-  font-size:24px;
-  font-weight:400;
-  padding:1.6em 0;
+	font-size:24px;
+	font-weight:400;
+	padding:1.6em 0;
 }
 h5 {
-  font-weight:600;
-  padding-bottom:1.2em;
-  font-size:1.1rem;
+	font-weight:600;
+	padding-bottom:1.2em;
+	font-size:1.1rem;
 }
 main p,
 main ol,
 main ul {
-  font-weight:300;
-  font-size:1rem;
-  line-height:1.6;
-  padding-bottom:1.5em;
+	font-weight:300;
+	font-size:1rem;
+	line-height:1.6;
+	padding-bottom:1.5em;
 }
 main ul li {
-  list-style:circle;
-  padding-bottom:1em;
+	list-style:circle;
+	padding-bottom:1em;
 }
 /************************
   Notification System
 *************************/
 .notifications-wrap {
-  width:100%;
-  display:block;
-  color:#fff;
+	width:100%;
+	display:block;
+	color:#fff;
 }
 .notifications-wrap .crimson-title {
-  width:100%;
-  text-align:center;
-  background-color:#981e32;
-  padding:.8em 0;
+	width:100%;
+	text-align:center;
+	background-color:#981e32;
+	padding:.8em 0;
 }
 .notifications-wrap .crimson-title header {
-  font-size:1rem;
-  text-transform:uppercase;
+	font-size:1rem;
+	text-transform:uppercase;
 }
 .notifications-wrap .system-announcement {
-  width:100%;
-  max-height:400px;
-  min-height:200px;
-  padding:3em 0;
+	width:100%;
+	max-height:400px;
+	min-height:200px;
+	padding:3em 0;
 }
 .notifications-wrap .system-announcement header,
 .notifications-wrap .system-announcement p {
-  width:390px;
-  margin-left:auto;
-  margin-right:auto;
+	width:390px;
+	margin-left:auto;
+	margin-right:auto;
 }
 .notifications-wrap .system-announcement header {
-  font-size:1.8rem;
-  font-weight:600;
-  text-transform:capitalize;;
-  padding-bottom:1em;
+	font-size:1.8rem;
+	font-weight:600;
+	text-transform:capitalize;;
+	padding-bottom:1em;
 }
 .notifications-wrap .system-announcement p {
-  font-weight:400;
+	font-weight:400;
 }
 .notifications-wrap .system-announcement.clear {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aca301+0,9b8d1f+100 */
-  background: rgb(172,163,1); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(172,163,1,1) 0%, rgba(155,141,31,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(172,163,1,1) 0%,rgba(155,141,31,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(172,163,1,1) 0%,rgba(155,141,31,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aca301', endColorstr='#9b8d1f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aca301+0,9b8d1f+100 */
+	background: rgb(172,163,1); /* Old browsers */ /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(172,163,1,1) 0%,rgba(155,141,31,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(315deg,  rgba(172,163,1,1) 0%,rgba(155,141,31,1) 100%);
+	background: linear-gradient(135deg,  rgba(172,163,1,1) 0%,rgba(155,141,31,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aca301', endColorstr='#9b8d1f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 .notifications-wrap .system-announcement.warning {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb81c+0,be860e+100 */
-  background: rgb(255,184,28); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(255,184,28,1) 0%, rgba(190,134,14,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(255,184,28,1) 0%,rgba(190,134,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(255,184,28,1) 0%,rgba(190,134,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81c', endColorstr='#be860e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb81c+0,be860e+100 */
+	background: rgb(255,184,28); /* Old browsers */ /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,184,28,1) 0%,rgba(190,134,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(315deg,  rgba(255,184,28,1) 0%,rgba(190,134,14,1) 100%);
+	background: linear-gradient(135deg,  rgba(255,184,28,1) 0%,rgba(190,134,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81c', endColorstr='#be860e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 .notifications-wrap .system-announcement.alert {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
-  background: rgb(246,134,31); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(246,134,31,1) 0%, rgba(246,134,31,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(246,134,31,1) 0%,rgba(246,134,31,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(246,134,31,1) 0%,rgba(246,134,31,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6861f', endColorstr='#f6861f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
+	background: rgb(246,134,31); /* Old browsers */ /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(246,134,31,1) 0%,rgba(246,134,31,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(315deg,  rgba(246,134,31,1) 0%,rgba(246,134,31,1) 100%);
+	background: linear-gradient(135deg,  rgba(246,134,31,1) 0%,rgba(246,134,31,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6861f', endColorstr='#f6861f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 /*******************
   Content Syndicate
 *******************/
 .wsuwp-content-syndicate-wrapper {
-  counter-reset: section;
+	counter-reset: section;
 }
 .wsuwp-content-syndicate-wrapper ul {
-  padding-left:45px;
+	padding-left:45px;
 }
 .wsuwp-content-syndicate-wrapper ul li {
-  list-style:none;
-  border-bottom:1px solid #d9d9d9;
-  padding:2em 0;
+	list-style:none;
+	border-bottom:1px solid #d9d9d9;
+	padding:2em 0;
 }
 .wsuwp-content-syndicate-wrapper ul li:first-child {
-  padding-top:0;
+	padding-top:0;
 }
 .wsuwp-content-syndicate-wrapper ul li:last-child {
-  border-bottom:0;
+	border-bottom:0;
 }
 .wsuwp-content-syndicate-wrapper ul li:before {
-  position:absolute;
-  left:68px;
-  width:20px;
-  text-align:center;
-  counter-increment: section;
-  content: counter(section);
-  padding:.2em;
-  font-size:.8rem;
-  border:1px solid #23282b;
-  border-radius:50%;
+	position:absolute;
+	left:68px;
+	width:20px;
+	text-align:center;
+	counter-increment: section;
+	content: counter(section);
+	padding:.2em;
+	font-size:.8rem;
+	border:1px solid #23282b;
+	border-radius:50%;
 }
 .content-item-byline-author {
-  display:none;
+	display:none;
 }
 .content-item-title,
 .content-item-byline {
-  font-weight:600;
-  margin-bottom:.7em;
+	font-weight:600;
+	margin-bottom:.7em;
 }
 .content-item-excerpt {
-  margin-top:.8em;
-  display:block;
+	margin-top:.8em;
+	display:block;
 }
 /*******************
   Notifications
 *******************/
 .notifications {
-    counter-reset: notifications;
+	counter-reset: notifications;
 }
 ul.notifications  {
-  column-count:2;
-  column-gap: 20px;
-  margin-top:2em;
+	-webkit-column-count:2;
+	   -moz-column-count:2;
+	        column-count:2;
+	-webkit-column-gap: 20px;
+	   -moz-column-gap: 20px;
+	        column-gap: 20px;
+	margin-top:2em;
 }
 ul.notifications li {
-  list-style:none;
-  padding-bottom:3em;
+	list-style:none;
+	padding-bottom:3em;
 }
 ul.notifications li:before {
-  display: inline-block;
-  width:20px;
-  text-align:center;
-  vertical-align:middle;
-  counter-increment: notifications;
-  content: counter(notifications);
-  padding:.2em;
-  margin-right:.8em;
-  font-size:.8rem;
-  border:1px solid #23282b;
-  border-radius:50%;
+	display: inline-block;
+	width:20px;
+	text-align:center;
+	vertical-align:middle;
+	counter-increment: notifications;
+	content: counter(notifications);
+	padding:.2em;
+	margin-right:.8em;
+	font-size:.8rem;
+	border:1px solid #23282b;
+	border-radius:50%;
 }
 .showTip {
-  font-size: .9em;
-  border: 1px solid #981e32;
-  border-radius: 50%;
-  padding: .3em;
-  display: inline-block;
-  width: 20px;
-  text-align: center;
-  height: 20px;
-  vertical-align: text-top;
-  line-height: .9;
-  margin-left:.5em;
+	font-size: .9em;
+	border: 1px solid #981e32;
+	border-radius: 50%;
+	padding: .3em;
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+	height: 20px;
+	vertical-align: text-top;
+	line-height: .9;
+	margin-left:.5em;
 }
 /*******************
   Dial 911
 *******************/
 .dial-911 .dial {
-  display:flex;
-  width:100%;
-  height:60px;
-  padding-bottom:1em;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	width:100%;
+	height:60px;
+	padding-bottom:1em;
 }
 .dial-911 .dial img,
 .dial-911 .dial h2 {
-  display:inline-flex;
+	display:-webkit-inline-box;
+	display:-ms-inline-flexbox;
+	display:inline-flex;
 }
 .dial-911 .dial img {
-  min-width:47px;
-  height:47px;
-  margin-right:.8em;
+	min-width:47px;
+	height:47px;
+	margin-right:.8em;
 }
 .dial-911 .dial h2 {
-  font-weight:600;
-  font-size:2rem;
-  line-height: .4;
-  padding-top:.5em;
-  white-space: nowrap;
+	font-weight:600;
+	font-size:2rem;
+	line-height: .4;
+	padding-top:.5em;
+	white-space: nowrap;
 }
 .dial-911 em {
-  font-size:.9em;
+	font-size:.9em;
 }
 /*******************
   Accordion
 *******************/
 .ui-accordion {
-    height:100%;
-    padding-bottom:2em;
+	height:100%;
+	padding-bottom:2em;
 }
 .ui-accordion div.accordion-content {
-  padding-top:.8em;
+	padding-top:.8em;
 }
 .ui-accordion h4 {
-  cursor: pointer;
-  font-size:1.2rem;
-  font-weight:400;
-  outline:0;
+	cursor: pointer;
+	font-size:1.2rem;
+	font-weight:400;
+	outline:0;
 }
 .ui-accordion h4.ui-state-default:before {
-  content:"+";
+	content:"+";
 }
 .ui-accordion h4.ui-state-active:before  {
-  content:"-";
+	content:"-";
 }
 .ui-accordion h4.ui-state-default:before,
 .ui-accordion h4.ui-state-active:before {
-  font-size:.8rem;
-  font-weight:300;
-  border:1px solid #981e32;
-  border-radius:50%;
-  padding:.2em;
-  display: inline-block;
-  width:20px;
-  text-align:center;
-  vertical-align:middle;
-  margin-right:10px;
-  color:#981e32;
+	font-size:.8rem;
+	font-weight:300;
+	border:1px solid #981e32;
+	border-radius:50%;
+	padding:.2em;
+	display: inline-block;
+	width:20px;
+	text-align:center;
+	vertical-align:middle;
+	margin-right:10px;
+	color:#981e32;
 }
 /*******************
   Examples
 *******************/
 .examples {
-  padding-bottom:2em;
+	padding-bottom:2em;
 }
 .examples p {
-  padding-bottom:1em;
+	padding-bottom:1em;
 }
 /****************************
   Blog, Archive, and Search
@@ -308,43 +306,46 @@ ul.notifications li:before {
 .blog main section,
 .archive main section,
 .search main section {
-  margin-top:0;
+	margin-top:0;
 }
 
 .blog article,
 .archive article,
 .search article {
-  padding-bottom:1.4em;
+	padding-bottom:1.4em;
 }
 .blog h2.article-title,
 .archive h2.article-title,
 .search h2.article-title {
-  padding-bottom:0;
+	padding-bottom:0;
 }
 .article-header hgroup.source,
 .article-header .hgroup.source {
-  padding-bottom:1.8em;
+	padding-bottom:1.8em;
 }
 .article-author {
-  display:none;
+	display:none;
 }
 /*******************
   Media Query
 *******************/
 @media screen and (max-width: 990px) {
-  main ol,
-  main ul {
-    padding-left:0;
-    padding-right:0;
-  }
-  ul.notifications  {
-    column-count:1;
-  }
-  ul.notifications li:before,
-  .ui-accordion h4.ui-state-default:before,
-  .ui-accordion h4.ui-state-active:before {
-    position:absolute;
-    display:block;
-    left:25px;
-  }
+	main ol,
+	main ul {
+		padding-left:0;
+		padding-right:0;
+	}
+	ul.notifications  {
+		-webkit-column-count:1;
+		   -moz-column-count:1;
+		        column-count:1;
+	}
+	ul.notifications li:before,
+	.ui-accordion h4.ui-state-default:before,
+	.ui-accordion h4.ui-state-active:before {
+		position:absolute;
+		display:block;
+		left:25px;
+	}
 }
+/*# sourceMappingURL=style.css.map */
