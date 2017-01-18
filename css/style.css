@@ -388,8 +388,6 @@ ul.notifications li:before {
 	}
 
 	ul.notifications {
-		-webkit-column-count: 1;
-		-moz-column-count: 1;
 		column-count: 1;
 	}
 
