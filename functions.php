@@ -140,3 +140,18 @@ function wsu_alert_save_post( $post_id, $post  ) {
 	}
 	// @codingStandardsIgnoreEnd
 }
+
+add_action( 'init', 'wsu_alert_unregister_taxonomies', 12 );
+/**
+ * Removes support for additional taxonomies on alerts.
+ *
+ * This helps to keep the new alert screen free of clutter so that it's
+ * easier to manage things quickly without distraction.
+ *
+ * @since 0.1.0
+ */
+function wsu_alert_unregister_taxonomies() {
+	unregister_taxonomy_for_object_type( 'wsuwp_university_category', 'post' );
+	unregister_taxonomy_for_object_type( 'wsuwp_university_location', 'post' );
+	unregister_taxonomy_for_object_type( 'wsuwp_university_org', 'post' );
+}
