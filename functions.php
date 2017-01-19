@@ -28,13 +28,7 @@ function wsu_alert_theme_version() {
  * @return string
  */
 function wsu_alert_level() {
-	$args = array(
-		'meta_key' => 'wsu_alert_status',
-		'meta_value' => 'active',
-		'posts_per_page' => 1,
-		'fields' => 'ids',
-	);
-	$active_alerts = get_posts( $args );
+	$active_alerts = wsu_alert_get_latest();
 
 	if ( 0 === count( $active_alerts ) ) {
 		return 'clear';
@@ -51,6 +45,25 @@ function wsu_alert_level() {
 	}
 
 	return 'clear';
+}
+
+/**
+ * Retrieves the latest active alert.
+ *
+ * @since 0.1.0
+ *
+ * @return array
+ */
+function wsu_alert_get_latest() {
+	$args = array(
+		'meta_key' => 'wsu_alert_status',
+		'meta_value' => 'active',
+		'posts_per_page' => 1,
+		'fields' => 'ids',
+	);
+	$active_alerts = get_posts( $args );
+
+	return $active_alerts;
 }
 
 /**

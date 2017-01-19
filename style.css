@@ -114,32 +114,13 @@ main ul li {
 	text-transform: uppercase;
 }
 
-.notifications-wrap .system-announcement {
+.notifications-wrap .system-announcement-wrapper {
 	width: 100%;
-	max-height: 400px;
 	min-height: 200px;
 	padding: 3em 0;
 }
 
-.notifications-wrap .system-announcement header,
-.notifications-wrap .system-announcement p {
-	width: 390px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.notifications-wrap .system-announcement header {
-	font-size: 1.8rem;
-	font-weight: 600;
-	text-transform: capitalize;
-	padding-bottom: 1em;
-}
-
-.notifications-wrap .system-announcement p {
-	font-weight: 400;
-}
-
-.notifications-wrap .system-announcement.clear {
+.notifications-wrap .system-announcement-wrapper.clear {
 
 	/* Gradient via http://colorzilla.com/gradient-editor/#aca301+0,9b8d1f+100 */
 	background: rgb(172, 163, 1); /* Old browsers */ /* FF3.6-15 */
@@ -149,7 +130,7 @@ main ul li {
 
 }
 
-.notifications-wrap .system-announcement.warning {
+.notifications-wrap .system-announcement-wrapper.warning {
 
 	/* Gradient via http://colorzilla.com/gradient-editor/#ffb81c+0,be860e+100 */
 	background: rgb(255, 184, 28); /* Old browsers */ /* FF3.6-15 */
@@ -159,13 +140,39 @@ main ul li {
 
 }
 
-.notifications-wrap .system-announcement.emergency {
+.notifications-wrap .system-announcement-wrapper.emergency {
 
 	/* Gradient via http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
 	background: rgb(246, 134, 31); /* Old browsers */ /* FF3.6-15 */
 	background: -webkit-linear-gradient(315deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%);
 	background: linear-gradient(135deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6861f", endColorstr="#f6861f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.notifications-wrap .system-announcement-container {
+	width: 67%;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.notifications-wrap .system-announcement-container header {
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding-bottom: 1em;
+}
+
+.notifications-wrap .system-announcement-content {
+	margin-top: 1.3em;
+}
+
+.notifications-wrap .system-announcement-container h1 {
+	font-size: 1.7em;
+}
+
+.notifications-wrap .system-announcement-container p {
+	font-weight: 400;
 }
 
 /*******************
