@@ -30,7 +30,7 @@ get_header();
 										</span>
 										<span class="announcement-item-excerpt">
 											<?php the_excerpt(); ?>
-											<a class="announcement-item-read-story" href="<?php echo esc_url( get_the_permalink() ); ?>">Read Story</a>
+											<a class="announcement-item-read-story" href="<?php echo esc_url( get_the_permalink() ); ?>">Read Announcement</a>
 										</span>
 									</li>
 									<?php
