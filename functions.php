@@ -98,7 +98,7 @@ function wsu_alert_add_meta_boxes( $post_type ) {
 		return;
 	}
 
-	add_meta_box( 'wsu_alert_active_stats', 'Alert Status', 'wsu_alert_display_alert_status', 'post', 'side', 'high' );
+	add_meta_box( 'wsu_alert_active_status', 'Alert Status', 'wsu_alert_display_alert_status', 'post', 'side', 'high' );
 }
 
 /**
