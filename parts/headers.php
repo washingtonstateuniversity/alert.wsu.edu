@@ -19,8 +19,14 @@
 				$active_alert = array_shift( $active_alerts );
 				setup_postdata( $active_alert );
 
+				$alert_location = get_post_meta( $active_alert, 'wsu_alert_location', true );
+				if ( 'pullman' === $alert_location ) {
+					$alert_location = 'Pullman Campus';
+				} else {
+					$alert_location = 'All WSU';
+				}
 				?>
-				<header>Pullman Campus</header>
+				<header><?php echo esc_html( $alert_location ); ?></header>
 				<h1><?php echo esc_html( get_the_title( $active_alert ) ); ?></h1>
 				<span class="system-announcement-date"><a href="<?php echo esc_url( get_the_permalink( $active_alert ) ); ?>"><?php echo esc_html( get_the_date( 'F d, Y g:ia' ) ); ?></a></span>
 				<div class="system-announcement-content">
