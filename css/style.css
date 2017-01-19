@@ -104,89 +104,90 @@ main ul li {
 	text-transform: uppercase;
 }
 
-.notifications-wrap .system-announcement {
+.notifications-wrap .system-announcement-wrapper {
 	width: 100%;
-	max-height: 400px;
 	min-height: 200px;
 	padding: 3em 0;
 }
 
-.notifications-wrap .system-announcement header,
-.notifications-wrap .system-announcement p {
-	width: 390px;
+.notifications-wrap .system-announcement-wrapper.clear {
+
+	/* Gradient via http://colorzilla.com/gradient-editor/#aca301+0,9b8d1f+100 */
+	background: rgb(172, 163, 1); /* Old browsers */ /* FF3.6-15 */
+	background: linear-gradient(135deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aca301", endColorstr="#9b8d1f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.notifications-wrap .system-announcement-wrapper.warning {
+
+	/* Gradient via http://colorzilla.com/gradient-editor/#ffb81c+0,be860e+100 */
+	background: rgb(255, 184, 28); /* Old browsers */ /* FF3.6-15 */
+	background: linear-gradient(135deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb81c", endColorstr="#be860e", GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.notifications-wrap .system-announcement-wrapper.emergency {
+
+	/* Gradient via http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
+	background: rgb(246, 134, 31); /* Old browsers */ /* FF3.6-15 */
+	background: linear-gradient(135deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6861f", endColorstr="#f6861f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.notifications-wrap .system-announcement-container {
+	width: 67%;
+	max-width: 640px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.notifications-wrap .system-announcement header {
+.notifications-wrap .system-announcement-container header {
 	font-size: 1.8rem;
 	font-weight: 600;
 	text-transform: capitalize;
 	padding-bottom: 1em;
 }
 
-.notifications-wrap .system-announcement p {
+.notifications-wrap .system-announcement-content {
+	margin-top: 1.3em;
+}
+
+.notifications-wrap .system-announcement-container h1 {
+	font-size: 1.7em;
+}
+
+.notifications-wrap .system-announcement-container p {
 	font-weight: 400;
-}
-
-.notifications-wrap .system-announcement.clear {
-
-	/* Gradient via http://colorzilla.com/gradient-editor/#aca301+0,9b8d1f+100 */
-	background: rgb(172, 163, 1); /* Old browsers */ /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: -webkit-linear-gradient(315deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%);
-	background: linear-gradient(135deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aca301", endColorstr="#9b8d1f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
-
-}
-
-.notifications-wrap .system-announcement.warning {
-
-	/* Gradient via http://colorzilla.com/gradient-editor/#ffb81c+0,be860e+100 */
-	background: rgb(255, 184, 28); /* Old browsers */ /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: -webkit-linear-gradient(315deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%);
-	background: linear-gradient(135deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb81c", endColorstr="#be860e", GradientType=1); /* IE6-9 fallback on horizontal gradient */
-
-}
-
-.notifications-wrap .system-announcement.alert {
-
-	/* Gradient via http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
-	background: rgb(246, 134, 31); /* Old browsers */ /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: -webkit-linear-gradient(315deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%);
-	background: linear-gradient(135deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6861f", endColorstr="#f6861f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
 
 /*******************
   Content Syndicate
 *******************/
-.wsuwp-content-syndicate-wrapper {
+.announcements-container {
 	counter-reset: section;
 }
 
-.wsuwp-content-syndicate-wrapper ul {
+.announcements-container ul {
 	padding-left: 45px;
 }
 
-.wsuwp-content-syndicate-wrapper ul li {
+.announcements-container ul li {
 	list-style: none;
 	border-bottom: 1px solid #d9d9d9;
 	padding: 2em 0;
 }
 
-.wsuwp-content-syndicate-wrapper ul li:first-child {
+.announcements-container ul li:first-child {
 	padding-top: 0;
 }
 
-.wsuwp-content-syndicate-wrapper ul li:last-child {
+.announcements-container ul li:last-child {
 	border-bottom: 0;
 }
 
-.wsuwp-content-syndicate-wrapper ul li:before {
+.announcements-container ul li:before {
 	position: absolute;
 	left: 68px;
 	width: 20px;
@@ -199,17 +200,17 @@ main ul li {
 	border-radius: 50%;
 }
 
-.content-item-byline-author {
+.announcement-item-byline-author {
 	display: none;
 }
 
-.content-item-title,
-.content-item-byline {
+.announcement-item-title,
+.announcement-item-byline {
 	font-weight: 600;
 	margin-bottom: .7em;
 }
 
-.content-item-excerpt {
+.announcement-item-excerpt {
 	margin-top: .8em;
 	display: block;
 }
@@ -263,6 +264,11 @@ ul.notifications li:before {
 /*******************
   Dial 911
 *******************/
+.dial-911 > p:first-child {
+	padding-top: 1.6em;
+	text-transform: uppercase;
+}
+
 .dial-911 .dial {
 	display: flex;
 	width: 100%;
