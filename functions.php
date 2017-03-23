@@ -17,7 +17,7 @@ add_filter( 'spine_child_theme_version', 'wsu_alert_theme_version' );
  * @return string
  */
 function wsu_alert_theme_version() {
-	return '0.1.0';
+	return '0.1.1';
 }
 
 /**
