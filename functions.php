@@ -144,7 +144,7 @@ add_action( 'save_post', 'wsu_alert_save_post', 10, 2 );
  * @param int     $post_id
  * @param WP_Post $post
  */
-function wsu_alert_save_post( $post_id, $post  ) {
+function wsu_alert_save_post( $post_id, $post ) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
