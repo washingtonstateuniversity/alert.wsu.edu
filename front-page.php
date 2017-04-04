@@ -35,6 +35,8 @@ get_header();
 									</li>
 									<?php
 								}
+							} else {
+								?><p class="no-announcements">There are no announcements at this time.</p><?php
 							}
 							wp_reset_postdata();
 							?>
