@@ -28,6 +28,6 @@ The text at the top of the page changes depending on the status:
 
 ## Front page
 
-The front page (after the common header) displays the most recent 3 posts categorized as announcements in the first section. These can be categorized in any way.
+The front page (after the common header) displays the most recent 3 posts tagged as "Post to alert home page" (slug: `home`) in the first section. These can be categorized in any way.
 
 The remaining sections on the page are customizable through the page builder interface.
