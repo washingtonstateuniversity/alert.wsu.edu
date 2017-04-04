@@ -110,14 +110,9 @@ function wsu_alert_add_meta_boxes( $post_type ) {
  */
 function wsu_alert_display_alert_status( $post ) {
 	$alert_status = get_post_meta( $post->ID, 'wsu_alert_status', true );
-	$alert_location = get_post_meta( $post->ID, 'wsu_alert_location', true );
 
 	if ( ! in_array( $alert_status, array( 'active', 'inactive' ), true ) ) {
 		$alert_status = 'inactive';
-	}
-
-	if ( ! in_array( $alert_location, array( 'all', 'pullman' ), true ) ) {
-		$alert_location = 'all';
 	}
 
 	?>
@@ -125,12 +120,6 @@ function wsu_alert_display_alert_status( $post ) {
 	<select id="alert-status-select" name="alert_status_select">
 		<option value="inactive" <?php selected( 'inactive', $alert_status ); ?>>Not Active</option>
 		<option value="active" <?php selected( 'active', $alert_status ); ?>>Active</option>
-	</select>
-	<br />
-	<label for="alert-location-select">Location:</label>
-	<select id="alert-location-select" name="alert_location_select">
-		<option value="all" <?php selected( 'all', $alert_location ); ?>>All WSU</option>
-		<option value="pullman" <?php selected( 'pullman', $alert_location ); ?>>Pullman Campus</option>
 	</select>
 	<?php
 }
@@ -162,12 +151,6 @@ function wsu_alert_save_post( $post_id, $post ) {
 		update_post_meta( $post_id, 'wsu_alert_status', sanitize_text_field( $_POST['alert_status_select'] ) );
 	} else {
 		update_post_meta( $post_id, 'wsu_alert_status', 'inactive' );
-	}
-
-	if ( in_array( $_POST['alert_location_select'], array( 'all', 'pullman' ), true ) ) {
-		update_post_meta( $post_id, 'wsu_alert_location', sanitize_text_field( $_POST['alert_location_select'] ) );
-	} else {
-		update_post_meta( $post_id, 'wsu_alert_location', 'all' );
 	}
 	// @codingStandardsIgnoreEnd
 }
