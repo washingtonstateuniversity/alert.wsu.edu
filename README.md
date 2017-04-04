@@ -6,7 +6,7 @@ Alerts are created as posts with 2 important details:
 
 Site categories are used to classify the importance. The three main categories are "Announcements", "Emergency", and "Warning".
 
-In the top right of the edit screen, "Alert Status" is available. For an alert to show as active, the drop down must be changed to **active**. A location drop-down is available as well. This defaults to "All WSU", but can be changed to "Pullman Campus".
+In the top right of the edit screen, "Alert Status" is available. For an alert to show as active, the drop down must be changed to **active**.
 
 ## Header
 
