@@ -14,7 +14,7 @@ get_header();
 
 							<?php
 							$wsu_alert_announcements = new WP_Query( array(
-								'category_name' => 'announcements',
+								'tag' => 'home',
 								'posts_per_page' => 3,
 								'fields' => 'ids',
 							) );
