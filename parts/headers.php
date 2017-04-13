@@ -11,7 +11,7 @@
 			<?php
 			if ( 'clear' === wsu_alert_level() ) {
 				?>
-				<header>ALL WSU</header>
+				<header>WSU Pullman</header>
 				<p>There are no warnings or emergencies</p>
 				<?php
 			} else {
@@ -20,7 +20,7 @@
 				setup_postdata( $active_alert );
 
 				?>
-				<header>Pullman Campus</header>
+				<header>WSU Pullman</header>
 				<h1><?php echo esc_html( get_the_title( $active_alert ) ); ?></h1>
 				<span class="system-announcement-date"><a href="<?php echo esc_url( get_the_permalink( $active_alert ) ); ?>"><?php echo esc_html( get_the_date( 'F d, Y g:ia' ) ); ?></a></span>
 				<div class="system-announcement-content">

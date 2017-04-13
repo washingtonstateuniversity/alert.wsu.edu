@@ -81,7 +81,7 @@ function wsu_alert_display_status_title() {
 	} elseif ( 'warning' === $level ) {
 		echo 'There is an active warning';
 	} else {
-		echo 'There are no alerts';
+		echo 'There are no WSU Pullman alerts';
 	}
 }
 
