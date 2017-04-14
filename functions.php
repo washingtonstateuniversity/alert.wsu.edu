@@ -81,8 +81,51 @@ function wsu_alert_display_status_title() {
 	} elseif ( 'warning' === $level ) {
 		echo 'There is an active warning';
 	} else {
-		echo 'There are no alerts';
+		echo 'There are no WSU Pullman alerts';
 	}
+}
+
+add_action( 'rest_api_init', 'wsu_alert_register_rest_endpoint' );
+/**
+ * Registers the active alert REST API endpoint.
+ *
+ * @since 0.2.0
+ */
+function wsu_alert_register_rest_endpoint() {
+	register_rest_route( 'alert/v1', '/active/', array(
+		'methods' => 'GET',
+		'callback' => 'wsu_alert_handle_active_endpoint',
+	) );
+}
+
+/**
+ * Provides an endpoint information about any active alerts.
+ *
+ * @since 0.2.0
+ *
+ * @return array
+ */
+function wsu_alert_handle_active_endpoint() {
+	if ( 'emergency' !== wsu_alert_level() ) {
+		return array(
+			'status' => 'clear',
+			'message' => 'There are no active emergency alerts.',
+			'url' => '',
+		);
+	}
+
+	$active_alerts = wsu_alert_get_latest();
+	$active_alert = array_shift( $active_alerts );
+	setup_postdata( $active_alert );
+
+	$data = array(
+		'status' => 'emergency',
+		'message' => get_the_title( $active_alert ),
+		'url' => esc_url( get_the_permalink( $active_alert ) ),
+	);
+	wp_reset_postdata();
+
+	return $data;
 }
 
 add_action( 'add_meta_boxes', 'wsu_alert_add_meta_boxes', 10 );
