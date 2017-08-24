@@ -22,7 +22,7 @@
 				?>
 				<header>WSU Pullman</header>
 				<h1><?php echo esc_html( get_the_title( $active_alert ) ); ?></h1>
-				<span class="system-announcement-date"><a href="<?php echo esc_url( get_the_permalink( $active_alert ) ); ?>"><?php echo esc_html( get_the_date( 'F d, Y g:ia' ) ); ?></a></span>
+				<span class="system-announcement-date"><a href="<?php echo esc_url( get_the_permalink( $active_alert ) ); ?>"><?php echo esc_html( get_the_date( 'F d, Y g:ia', $active_alert ) ); ?></a></span>
 				<div class="system-announcement-content">
 					<?php the_content( '<a href="' . esc_url( get_the_permalink( $active_alert ) ) . '">Read full alert...</a>' ); ?>
 				</div>
