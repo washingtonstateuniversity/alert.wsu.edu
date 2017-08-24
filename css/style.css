@@ -57,6 +57,7 @@ hr {
 /*******************
   Typography
 *******************/
+
 h2 {
 	font-size: 24px;
 	font-weight: 400;
@@ -86,6 +87,7 @@ main ul li {
 /************************
   Notification System
 *************************/
+
 .notifications-wrap {
 	width: 100%;
 	display: block;
@@ -115,7 +117,9 @@ main ul li {
 	/* Gradient via http://colorzilla.com/gradient-editor/#aca301+0,9b8d1f+100 */
 	background: rgb(172, 163, 1); /* Old browsers */ /* FF3.6-15 */
 	background: linear-gradient(135deg, rgba(172, 163, 1, 1) 0%, rgba(155, 141, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/* stylelint-disable */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aca301", endColorstr="#9b8d1f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
+	/* stylelint-enable */
 
 }
 
@@ -124,7 +128,9 @@ main ul li {
 	/* Gradient via http://colorzilla.com/gradient-editor/#ffb81c+0,be860e+100 */
 	background: rgb(255, 184, 28); /* Old browsers */ /* FF3.6-15 */
 	background: linear-gradient(135deg, rgba(255, 184, 28, 1) 0%, rgba(190, 134, 14, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/* stylelint-disable */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb81c", endColorstr="#be860e", GradientType=1); /* IE6-9 fallback on horizontal gradient */
+	/* stylelint-enable */
 
 }
 
@@ -133,7 +139,9 @@ main ul li {
 	/* Gradient via http://colorzilla.com/gradient-editor/#f6861f+0,f6861f+100 */
 	background: rgb(246, 134, 31); /* Old browsers */ /* FF3.6-15 */
 	background: linear-gradient(135deg, rgba(246, 134, 31, 1) 0%, rgba(246, 134, 31, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/* stylelint-disable */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6861f", endColorstr="#f6861f", GradientType=1); /* IE6-9 fallback on horizontal gradient */
+	/* stylelint-enable */
 }
 
 .notifications-wrap .system-announcement-container {
@@ -165,6 +173,7 @@ main ul li {
 /*******************
   Content Syndicate
 *******************/
+
 .announcements-container {
 	counter-reset: section;
 }
@@ -218,6 +227,7 @@ main ul li {
 /*******************
   Notifications
 *******************/
+
 .notifications {
 	counter-reset: notifications;
 }
@@ -264,6 +274,7 @@ ul.notifications li:before {
 /*******************
   Dial 911
 *******************/
+
 .dial-911 > p:first-child {
 	padding-top: 1.6em;
 	text-transform: uppercase;
@@ -302,6 +313,7 @@ ul.notifications li:before {
 /*******************
   Accordion
 *******************/
+
 .ui-accordion {
 	height: 100%;
 	padding-bottom: 2em;
@@ -344,6 +356,7 @@ ul.notifications li:before {
 /*******************
   Examples
 *******************/
+
 .examples {
 	padding-bottom: 2em;
 }
@@ -355,6 +368,7 @@ ul.notifications li:before {
 /****************************
   Blog, Archive, and Search
 *****************************/
+
 .blog main section,
 .archive main section,
 .search main section {
