@@ -58,7 +58,7 @@ function wsu_alert_level() {
 function wsu_alert_get_latest() {
 	$active_alerts = wp_cache_get( 'active-alert-id', 'alert' );
 
-	if ( ! $active_alerts ) {
+	if ( false === $active_alerts ) {
 		$args = array(
 			'meta_key' => 'wsu_alert_status',
 			'meta_value' => 'active',
