@@ -17,7 +17,7 @@ add_filter( 'spine_child_theme_version', 'wsu_alert_theme_version' );
  * @return string
  */
 function wsu_alert_theme_version() {
-	return '0.2.1';
+	return '0.3.0';
 }
 
 /**
@@ -56,15 +56,32 @@ function wsu_alert_level() {
  * @return array
  */
 function wsu_alert_get_latest() {
-	$args = array(
-		'meta_key' => 'wsu_alert_status',
-		'meta_value' => 'active',
-		'posts_per_page' => 1,
-		'fields' => 'ids',
-	);
-	$active_alerts = get_posts( $args );
+	$active_alerts = wp_cache_get( 'active-alert-id', 'alert' );
+
+	if ( false === $active_alerts ) {
+		$args = array(
+			'meta_key' => 'wsu_alert_status',
+			'meta_value' => 'active',
+			'posts_per_page' => 1,
+			'fields' => 'ids',
+		);
+		$active_alerts = get_posts( $args );
+
+		wp_cache_set( 'active-alert-id', $active_alerts, 'alert', HOUR_IN_SECONDS );
+	}
 
 	return $active_alerts;
+}
+
+add_action( 'clean_post_cache', 'wsu_alert_clean_cache' );
+/**
+ * Clear the alert cache whenever post cache is cleaned on
+ * alert.wsu.edu.
+ *
+ * @since 0.3.0
+ */
+function wsu_alert_clean_cache() {
+	wp_cache_delete( 'active-alert-id', 'alert' );
 }
 
 /**
