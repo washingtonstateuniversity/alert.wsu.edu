@@ -48,6 +48,39 @@ function wsu_alert_level() {
 	return 'clear';
 }
 
+
+/**
+ * Get current item alert level
+ *
+ * @since 1.0.0
+ *
+ * @return string
+ */
+function wsu_get_alert_level($post_id) {
+	$categories = get_the_category( $post_id );
+
+	foreach ( $categories as $category ) {
+		if ( in_array( $category->slug, array( 'emergency', 'warning' ), true ) ) {
+			return $category->slug;
+		}
+	}
+
+	return 'clear';
+}
+
+/**
+ * Returns the total number of active alerts
+ *
+ * @since 1.0.0
+ *
+ * @return string
+ */
+function wsu_alert_count() {
+	$active_alerts = wsu_alert_get_latest();
+
+	return count($active_alerts);
+}
+
 /**
  * Retrieves the latest active alert.
  *
@@ -62,7 +95,7 @@ function wsu_alert_get_latest() {
 		$args = array(
 			'meta_key' => 'wsu_alert_status',
 			'meta_value' => 'active',
-			'posts_per_page' => 1,
+			'posts_per_page' => 99,
 			'fields' => 'ids',
 		);
 		$active_alerts = get_posts( $args );
@@ -91,14 +124,12 @@ function wsu_alert_clean_cache() {
  * @since 0.1.0
  */
 function wsu_alert_display_status_title() {
-	$level = wsu_alert_level();
+	$count = wsu_alert_count();
 
-	if ( 'emergency' === $level ) {
-		echo 'There is an active emergency';
-	} elseif ( 'warning' === $level ) {
-		echo 'There is an active warning';
+	if ( $count === 0 ) {
+		echo 'There are no WSU Pullman alerts.';
 	} else {
-		echo 'There are no WSU Pullman alerts';
+		echo 'Current active alerts: ' . $count;
 	}
 }
 
